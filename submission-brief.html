@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thesis Submission Brief</title>
+<meta name="description" content="What to send for your thesis page — text, images, and captions, organized to match the archive's page structure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121210;
+  --paper:#f4f0e6;
+  --paper-2:#ece5d3;
+  --line:#c6bc9e;
+  --ink-soft:#57534a;
+  --ink-faint:#8a8474;
+  --signal:#db3b0a;
+  --moss:#38442e;
+  --moss-tint:#dbe1c9;
+
+  --font-display:'EB Garamond','Iowan Old Style',Georgia,serif;
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --font-mono:'IBM Plex Mono','SF Mono',Consolas,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font-body);line-height:1.6;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px;margin-inline:auto;padding:clamp(2rem,6vw,4rem) clamp(1.25rem,4vw,2rem) 4rem;}
+h1,h2,h3{font-family:var(--font-display);font-weight:500;margin:0;text-wrap:balance;}
+p{margin:0;}
+.mono{font-family:var(--font-mono);letter-spacing:.04em;}
+a{color:var(--signal);}
+
+header{border-bottom:2px solid var(--ink);padding-bottom:1.5rem;margin-bottom:2.5rem;}
+.eyebrow{
+  font-family:var(--font-mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--signal);margin-bottom:.8rem;
+}
+h1{font-size:clamp(2rem,5vw,2.9rem);}
+.dek{
+  font-family:var(--font-display);font-style:italic;color:var(--ink-soft);
+  font-size:1.15rem;max-width:46ch;margin-top:.8rem;
+}
+
+.intro{font-size:1.02rem;color:var(--ink-soft);max-width:62ch;margin-bottom:2.8rem;}
+.intro + .intro{margin-top:-1.8rem;}
+
+.chapter{margin-bottom:2.6rem;border:1px solid var(--line);background:var(--paper-2);}
+.chapter-bar{
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem;flex-wrap:wrap;
+  padding:1rem 1.4rem;border-bottom:1px solid var(--line);
+}
+.chapter-bar .num{font-family:var(--font-mono);font-size:.72rem;color:var(--signal);}
+.chapter-bar h2{font-size:1.35rem;}
+.chapter-body{padding:1.4rem 1.4rem 1.6rem;}
+.chapter-note{font-size:.88rem;color:var(--ink-faint);margin-bottom:1.1rem;max-width:56ch;}
+
+.item-list{list-style:none;margin:0;padding:0;display:grid;gap:.9rem;}
+.item{
+  display:grid;grid-template-columns:1.6rem 1fr;gap:.8rem;
+  align-items:start;
+}
+.item .box{
+  width:1.1rem;height:1.1rem;border:1.5px solid var(--ink);margin-top:.15rem;flex-shrink:0;
+}
+.item .label{font-weight:600;font-size:.94rem;}
+.item .detail{font-size:.86rem;color:var(--ink-soft);margin-top:.15rem;}
+.item .spec{
+  display:inline-block;margin-top:.3rem;font-family:var(--font-mono);font-size:.68rem;
+  color:var(--ink-faint);text-transform:uppercase;letter-spacing:.03em;
+}
+
+.example{
+  margin-top:1.4rem;border:1px dashed var(--line);padding:1rem 1.1rem;background:var(--paper);
+}
+.example .tag{font-family:var(--font-mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.06em;color:var(--moss);margin-bottom:.5rem;display:block;}
+.example .sample{font-family:var(--font-mono);font-size:.8rem;color:var(--ink);background:var(--paper-2);padding:.6rem .8rem;border:1px solid var(--line);}
+
+table.filetable{width:100%;border-collapse:collapse;margin-top:.5rem;font-size:.86rem;}
+table.filetable th{text-align:left;font-family:var(--font-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);border-bottom:1px solid var(--ink);padding:.4rem .6rem .5rem 0;}
+table.filetable td{padding:.55rem .6rem .55rem 0;border-bottom:1px solid var(--line);vertical-align:top;}
+.filetable-wrap{overflow-x:auto;}
+
+.callout{
+  background:var(--moss);color:#eef1e5;padding:1.4rem 1.5rem;margin-top:2.8rem;
+}
+.callout h3{font-size:1.2rem;color:#fff;margin-bottom:.6rem;}
+.callout p{color:#d7ddc7;font-size:.92rem;max-width:56ch;}
+.callout .fields{margin-top:1rem;display:grid;gap:.6rem;font-size:.9rem;}
+.callout .fields div{display:flex;gap:.5rem;}
+.callout .fields strong{color:#fff;min-width:6.5rem;flex-shrink:0;}
+.callout .fields span{color:#d7ddc7;font-style:italic;}
+
+footer{margin-top:3rem;padding-top:1.2rem;border-top:1px solid var(--line);font-size:.72rem;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Landscape Thesis Archive — Vol. 2026</div>
+    <h1>Thesis Submission Brief</h1>
+    <p class="dek">What to send me for your thesis page — text, images, and captions, organized the way your page will actually use them.</p>
+  </header>
+
+  <p class="intro">Your thesis will get its own page in the archive, built to the same structure as the example page already online. You don't need to design anything or size any images — just gather what's below and send it over. If something doesn't apply to your project (no supervisor, no phasing diagram, whatever), leave it out and note that it's missing.</p>
+
+  <!-- BASICS -->
+  <section class="chapter">
+    <div class="chapter-bar"><span class="num">00 / Basics</span><h2>Project Details</h2></div>
+    <div class="chapter-body">
+      <ul class="item-list">
+        <li class="item"><span class="box"></span><div><div class="label">Thesis title</div><div class="detail">The real title, as it appears on your submitted thesis.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">One-line summary</div><div class="detail">A single sentence describing the project — this runs under your title. Aim for 15–25 words.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Your name</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Site name and location</div><div class="detail">e.g. town/region and country. Coordinates are welcome but optional.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Supervisor's name</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Year of submission</div></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CHAPTER 1 -->
+  <section class="chapter">
+    <div class="chapter-bar"><span class="num">01 / Site &amp; Context</span><h2>Reading the Site</h2></div>
+    <div class="chapter-body">
+      <p class="chapter-note">This section introduces the site and the problem your thesis responds to.</p>
+      <ul class="item-list">
+        <li class="item"><span class="box"></span><div><div class="label">Site description, 2 short paragraphs</div><div class="detail">What the site is, what condition it's in, and why it matters. Around 100–150 words total.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Up to 4 key site statistics</div><div class="detail">Any hard numbers worth pulling out — area, elevation, rainfall, population, age of existing infrastructure, whatever is central to your site.</div><span class="spec">Format: number + unit + one-line label</span></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Existing topography / site map</div><span class="spec">Image</span></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Land-use or context diagram</div><span class="spec">Image</span></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">2–3 site photographs</div><span class="spec">Image</span></div></li>
+      </ul>
+      <div class="example">
+        <span class="tag">Example — site statistic</span>
+        <div class="sample">42 ha — site area</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 2 -->
+  <section class="chapter">
+    <div class="chapter-bar"><span class="num">02 / Concept &amp; Strategy</span><h2>The Idea</h2></div>
+    <div class="chapter-body">
+      <p class="chapter-note">This section carries your core design argument — the idea everything else follows from.</p>
+      <ul class="item-list">
+        <li class="item"><span class="box"></span><div><div class="label">Concept description, 1 paragraph</div><div class="detail">Around 80–120 words on your design strategy and reasoning.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">One pull-quote sentence</div><div class="detail">The single sentence that best captures your concept — it runs large on the page.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Strategy list, 3–5 items</div><div class="detail">Each move in your strategy as a short name plus one-sentence description.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Up to 3 diagrams</div><div class="detail">Phasing, hydrology/process sections, sketches — whatever explains the thinking.</div><span class="spec">Image</span></div></li>
+      </ul>
+      <div class="example">
+        <span class="tag">Example — strategy list item</span>
+        <div class="sample">Terraced marsh steps — Absorb tidal surge in stages rather than a single wall.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 3 -->
+  <section class="chapter">
+    <div class="chapter-bar"><span class="num">03 / Design Proposal</span><h2>The Design</h2></div>
+    <div class="chapter-body">
+      <p class="chapter-note">The bulk of your drawings and renders live here. Send everything you have — plans, sections, renders — with a one-line caption for each.</p>
+      <ul class="item-list">
+        <li class="item"><span class="box"></span><div><div class="label">Site plan</div><span class="spec">Image + scale, if drawn to one</span></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Sections</div><div class="detail">As many as are relevant, each labeled (e.g. "Section AA").</div><span class="spec">Image</span></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Renders</div><span class="spec">Image, highest resolution you have</span></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Optional: existing vs. proposed pair</div><div class="detail">The same view or section, before and after — used for a side-by-side comparison on the page.</div><span class="spec">Two images</span></div></li>
+      </ul>
+      <div class="example">
+        <span class="tag">Example — figure caption</span>
+        <div class="sample">Fig. 08 — Section AA, marsh terrace — scale 1:200</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 4 -->
+  <section class="chapter">
+    <div class="chapter-bar"><span class="num">04 / Reflection</span><h2>Closing</h2></div>
+    <div class="chapter-body">
+      <ul class="item-list">
+        <li class="item"><span class="box"></span><div><div class="label">Reflection, 1 short paragraph</div><div class="detail">What the thesis argues, and what it leaves unresolved. Around 80–150 words.</div></div></li>
+        <li class="item"><span class="box"></span><div><div class="label">Final crit poster</div><div class="detail">The board you presented at your final review, if you have a clean file of it.</div><span class="spec">Image, portrait orientation</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FILE SPECS -->
+  <section class="chapter">
+    <div class="chapter-bar"><span class="num">Specs</span><h2>File Formats</h2></div>
+    <div class="chapter-body">
+      <div class="filetable-wrap">
+        <table class="filetable">
+          <tr><th>Type</th><th>Format</th><th>Notes</th></tr>
+          <tr><td>Images</td><td class="mono">JPG or PNG</td><td>Longest edge at least 2000px. Send the highest resolution file you have — it can always be scaled down.</td></tr>
+          <tr><td>Text</td><td class="mono">.docx, .txt, or in the body of your email</td><td>Plain text is fine. No need to format it.</td></tr>
+          <tr><td>File names</td><td class="mono">01_site-plan.jpg</td><td>Number your images in the order you'd like them to appear, with a short description.</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="callout">
+    <h3>Sending it over</h3>
+    <p>Once everything's gathered, send it as a single folder or zip so nothing gets separated from its caption.</p>
+    <div class="fields">
+      <div><strong>Send to</strong><span>hashim2m@gmail.com</span></div>
+      <div><strong>Deadline</strong><span>01 Oct 2026</span></div>
+    </div>
+  </div>
+
+  <footer>
+    <span>Landscape Thesis Archive</span>
+    <span>Submission Brief · 2026</span>
+  </footer>
+</div>
+
+</body>
+</html>

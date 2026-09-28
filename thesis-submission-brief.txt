@@ -1,0 +1,127 @@
+LANDSCAPE THESIS ARCHIVE — VOL. 2026
+THESIS SUBMISSION BRIEF
+
+What to send me for your thesis page — text, images, and captions,
+organized the way your page will actually use them.
+
+Your thesis will get its own page in the archive, built to the same
+structure as the example page already online. You don't need to design
+anything or size any images — just gather what's below and send it
+over. If something doesn't apply to your project (no supervisor, no
+phasing diagram, whatever), leave it out and note that it's missing.
+
+
+00 / BASICS — PROJECT DETAILS
+------------------------------
+[ ] Thesis title
+    The real title, as it appears on your submitted thesis.
+
+[ ] One-line summary
+    A single sentence describing the project — this runs under your
+    title. Aim for 15-25 words.
+
+[ ] Your name
+
+[ ] Site name and location
+    e.g. town/region and country. Coordinates are welcome but optional.
+
+[ ] Supervisor's name
+
+[ ] Year of submission
+
+
+01 / SITE & CONTEXT — READING THE SITE
+------------------------------
+This section introduces the site and the problem your thesis responds to.
+
+[ ] Site description, 2 short paragraphs
+    What the site is, what condition it's in, and why it matters.
+    Around 100-150 words total.
+
+[ ] Up to 4 key site statistics
+    Any hard numbers worth pulling out — area, elevation, rainfall,
+    population, age of existing infrastructure, whatever is central
+    to your site.
+    Format: number + unit + one-line label
+    Example: 42 ha — site area
+
+[ ] Existing topography / site map (image)
+
+[ ] Land-use or context diagram (image)
+
+[ ] 2-3 site photographs (image)
+
+
+02 / CONCEPT & STRATEGY — THE IDEA
+------------------------------
+This section carries your core design argument — the idea everything
+else follows from.
+
+[ ] Concept description, 1 paragraph
+    Around 80-120 words on your design strategy and reasoning.
+
+[ ] One pull-quote sentence
+    The single sentence that best captures your concept — it runs
+    large on the page.
+
+[ ] Strategy list, 3-5 items
+    Each move in your strategy as a short name plus one-sentence
+    description.
+    Example: Terraced marsh steps — Absorb tidal surge in stages
+    rather than a single wall.
+
+[ ] Up to 3 diagrams (image)
+    Phasing, hydrology/process sections, sketches — whatever
+    explains the thinking.
+
+
+03 / DESIGN PROPOSAL — THE DESIGN
+------------------------------
+The bulk of your drawings and renders live here. Send everything you
+have — plans, sections, renders — with a one-line caption for each.
+
+[ ] Site plan (image + scale, if drawn to one)
+
+[ ] Sections (image)
+    As many as are relevant, each labeled (e.g. "Section AA").
+
+[ ] Renders (image, highest resolution you have)
+
+[ ] Optional: existing vs. proposed pair (two images)
+    The same view or section, before and after — used for a
+    side-by-side comparison on the page.
+
+    Example caption: Fig. 08 — Section AA, marsh terrace — scale 1:200
+
+
+04 / REFLECTION — CLOSING
+------------------------------
+[ ] Reflection, 1 short paragraph
+    What the thesis argues, and what it leaves unresolved.
+    Around 80-150 words.
+
+[ ] Final crit poster (image, portrait orientation)
+    The board you presented at your final review, if you have a
+    clean file of it.
+
+
+FILE FORMATS
+------------------------------
+Images       JPG or PNG. Longest edge at least 2000px. Send the
+             highest resolution file you have — it can always be
+             scaled down.
+
+Text         .docx, .txt, or in the body of your email. Plain text
+             is fine, no need to format it.
+
+File names   01_site-plan.jpg — number your images in the order
+             you'd like them to appear, with a short description.
+
+
+SENDING IT OVER
+------------------------------
+Once everything's gathered, send it as a single folder or zip so
+nothing gets separated from its caption.
+
+Send to:   hashim2m@gmail.com
+Deadline:  01 Oct 2026
