@@ -390,6 +390,8 @@ a{color:inherit;}
 .author-fields div:last-child{border-bottom:none;}
 .author-fields dt{font-family:var(--font-mono);font-size:.66rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);align-self:center;}
 .author-fields dd{margin:0;font-family:var(--font-display);font-size:1.05rem;font-style:italic;align-self:center;}
+.author-fields dd a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:.15em;}
+.author-fields dd a:hover{text-decoration-color:currentColor;}
 
 footer{
   padding:2.2rem clamp(1.25rem,4vw,3.5rem);
