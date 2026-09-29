@@ -215,6 +215,9 @@ a{color:inherit;}
 @media (min-width:760px){
   .plate-grid.two{grid-template-columns:1.3fr 1fr;}
   .plate-grid.three{grid-template-columns:repeat(3,1fr);}
+  .plate-grid.concept{grid-template-columns:repeat(2,1fr);}
+  .plate-grid.concept .plate:nth-child(3){grid-column:1 / -1;}
+  .plate-grid.concept .plate:nth-child(3) .plate-art{aspect-ratio:16/9;}
 }
 .plate{
   border:1px solid var(--line);
