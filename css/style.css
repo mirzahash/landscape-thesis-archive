@@ -104,12 +104,12 @@ a{color:inherit;}
   max-width:16ch;
 }
 .hero-subtitle{
-  font-family:var(--font-body);
-  font-weight:500;
-  font-size:clamp(1rem,2vw,1.2rem);
-  color:var(--paper-on-ink);
-  max-width:40ch;
-  margin-top:.7rem;
+  font-family:var(--font-display);
+  font-style:italic;
+  font-size:clamp(1.15rem,2.4vw,1.55rem);
+  color:var(--paper-on-ink-soft);
+  max-width:34ch;
+  margin-top:1.4rem;
 }
 .hero-deck{
   font-family:var(--font-display);
@@ -275,6 +275,12 @@ a{color:inherit;}
 .plate-cap .desc{color:var(--ink-faint);flex:1;}
 .on-ink .plate-cap .desc,.on-moss .plate-cap .desc{color:var(--paper-on-ink-soft);}
 .on-moss .plate-cap .fig{color:var(--paper-on-ink);}
+
+/* text + companion image, side by side */
+.split{display:grid;gap:1.75rem;align-items:start;}
+@media (min-width:760px){
+  .split{grid-template-columns:1.2fr 1fr;}
+}
 
 /* pull quote */
 .pullquote{
