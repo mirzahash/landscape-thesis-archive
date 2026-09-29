@@ -103,6 +103,14 @@ a{color:inherit;}
   line-height:.98;
   max-width:16ch;
 }
+.hero-subtitle{
+  font-family:var(--font-body);
+  font-weight:500;
+  font-size:clamp(1rem,2vw,1.2rem);
+  color:var(--paper-on-ink);
+  max-width:40ch;
+  margin-top:.7rem;
+}
 .hero-deck{
   font-family:var(--font-display);
   font-style:italic;
@@ -238,6 +246,11 @@ a{color:inherit;}
   background-image:
     radial-gradient(circle at 30% 35%, rgba(255,255,255,.35), transparent 45%),
     radial-gradient(circle at 75% 70%, rgba(0,0,0,.18), transparent 50%);
+}
+.plate-img{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;display:block;
 }
 .plate-art .north{
   position:absolute;top:.7rem;right:.7rem;
