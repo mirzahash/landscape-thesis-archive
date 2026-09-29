@@ -277,7 +277,7 @@ a{color:inherit;}
 .on-moss .plate-cap .fig{color:var(--paper-on-ink);}
 
 /* text + companion image, side by side */
-.split{display:grid;gap:1.75rem;align-items:center;}
+.split{display:grid;gap:1.75rem;align-items:start;}
 @media (min-width:760px){
   .split{grid-template-columns:1fr 1fr;}
 }
