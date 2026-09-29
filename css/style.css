@@ -219,9 +219,11 @@ a{color:inherit;}
 .plate-grid{
   display:grid;gap:1.5rem;
   margin-top:2.5rem;
+  align-items:start;
 }
 @media (min-width:760px){
   .plate-grid.two{grid-template-columns:1.3fr 1fr;}
+  .plate-grid.two.even{grid-template-columns:1fr 1fr;}
   .plate-grid.three{grid-template-columns:repeat(3,1fr);}
   .plate-grid.concept{grid-template-columns:repeat(2,1fr);}
   .plate-grid.concept .plate:nth-child(3){grid-column:1 / -1;}
@@ -301,6 +303,7 @@ a{color:inherit;}
 /* horizontal gallery */
 .gallery-scroll{
   display:flex;gap:1.25rem;overflow-x:auto;
+  align-items:flex-start;
   margin-top:2.5rem;padding-bottom:1rem;
   scroll-snap-type:x proximity;
   -webkit-overflow-scrolling:touch;
