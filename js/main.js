@@ -36,12 +36,11 @@
     var viewer = document.createElement('dialog');
     viewer.className = 'image-viewer';
     viewer.setAttribute('aria-label', 'Enlarged image');
-    viewer.innerHTML = '<div class="viewer-toolbar"><button type="button" class="viewer-zoom" aria-pressed="false">Zoom to full size</button><button type="button" class="viewer-close" autofocus>Close ×</button></div><div class="viewer-stage"><img class="viewer-image" alt=""></div><p class="viewer-caption"></p>';
+    viewer.innerHTML = '<div class="viewer-toolbar"><button type="button" class="viewer-close" autofocus>Close ×</button></div><div class="viewer-stage"><img class="viewer-image" alt="" role="button" tabindex="0" aria-pressed="false"></div><p class="viewer-caption"></p>';
     document.body.appendChild(viewer);
     var largeImage = viewer.querySelector('.viewer-image');
     var stage = viewer.querySelector('.viewer-stage');
     var caption = viewer.querySelector('.viewer-caption');
-    var zoom = viewer.querySelector('.viewer-zoom');
     var opener;
     var previousOverflow;
     function openImage(img, trigger){
@@ -52,8 +51,9 @@
       var label = figure && figure.querySelector('figcaption');
       caption.textContent = label ? label.innerText : img.alt;
       stage.classList.remove('is-zoomed');
-      zoom.textContent = 'Zoom to full size';
-      zoom.setAttribute('aria-pressed', 'false');
+      largeImage.setAttribute('aria-label', img.alt + ' — click to zoom in');
+      largeImage.setAttribute('aria-pressed', 'false');
+      largeImage.title = 'Click to zoom in';
       previousOverflow = document.body.style.overflow;
       document.body.style.overflow = 'hidden';
       viewer.showModal();
@@ -67,10 +67,20 @@
       document.body.style.overflow = previousOverflow;
       if(opener) opener.focus({preventScroll:true});
     });
-    zoom.addEventListener('click', function(){
+    function toggleZoom(){
       var expanded = stage.classList.toggle('is-zoomed');
-      zoom.textContent = expanded ? 'Fit to screen' : 'Zoom to full size';
-      zoom.setAttribute('aria-pressed', String(expanded));
+      var action = expanded ? 'Click to zoom out' : 'Click to zoom in';
+      largeImage.title = action;
+      largeImage.setAttribute('aria-label', largeImage.alt + ' — ' + action);
+      largeImage.setAttribute('aria-pressed', String(expanded));
+      if(!expanded) stage.scrollTop = stage.scrollLeft = 0;
+    }
+    largeImage.addEventListener('click', toggleZoom);
+    largeImage.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        toggleZoom();
+      }
     });
     images.forEach(function(img){
       var comparison = img.closest('.compare');
